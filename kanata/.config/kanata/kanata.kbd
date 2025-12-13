@@ -1,9 +1,11 @@
 (defcfg
   process-unmapped-keys yes
 )
+
 (defsrc
   a   s   d   f   j   k   l   ;
 )
+
 (defvar
   ;; Note: consider using different time values for your different fingers.
   ;; For example, your pinkies might be slower to release keys and index
@@ -22,6 +24,7 @@
     n m , . /
   )
 )
+
 (deflayer base
   @a  @s  @d  @f  @j  @k  @l  @;
 )
@@ -29,9 +32,11 @@
 (deflayer nomods
   a   s   d   f   j   k   l   ;
 )
+
 (deffakekeys
   to-base (layer-switch base)
 )
+
 (defalias
   tap (multi
     (layer-switch nomods)
